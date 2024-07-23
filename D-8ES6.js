@@ -17,16 +17,16 @@ templeteLiterals();
 // task  2
 const destructArr = () => {
   let arr = [1, 2, 3];
-  // let [a, b] = arr;
-  // console.log(a, b);
-
-  let a = 1;
-  let b = 2;
-  let temp = a;
-
-  a = b;
-  b = temp;
-
+  let [a, b] = arr;
   console.log(a, b);
 };
-destructArr();
+// destructArr();
+
+// task4
+const destructObj = () => {
+  let obj = { name: "John", author: "mpneuhbv" };
+  let { name, author } = obj;
+  console.log(name, author);
+};
+
+destructObj();
